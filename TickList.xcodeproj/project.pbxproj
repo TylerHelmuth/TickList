@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1F165D1CFBBD760097EEED /* TickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */; };
+		2F1F165E1CFBBD760097EEED /* TickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */; };
+		2F1F165F1CFBBD760097EEED /* TickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */; };
+		2F1F16671CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */; };
+		2F1F16681CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */; };
+		2F1F16691CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */; };
+		2F1F166F1CFBC2720097EEED /* Tick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F166B1CFBC2720097EEED /* Tick.swift */; };
+		2F1F16701CFBC2720097EEED /* Tick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F166B1CFBC2720097EEED /* Tick.swift */; };
+		2F1F16711CFBC2720097EEED /* Tick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F166B1CFBC2720097EEED /* Tick.swift */; };
+		2FE6F3151CF8D2FF00BCB118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */; };
+		2FE6F3191CF8D2FF00BCB118 /* TicksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */; };
+		2FE6F31E1CF8D30000BCB118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6F31C1CF8D30000BCB118 /* Main.storyboard */; };
+		2FE6F3201CF8D30000BCB118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6F31F1CF8D30000BCB118 /* Assets.xcassets */; };
+		2FE6F3231CF8D30000BCB118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6F3211CF8D30000BCB118 /* LaunchScreen.storyboard */; };
+		2FE6F32E1CF8D30000BCB118 /* TickListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F32D1CF8D30000BCB118 /* TickListTests.swift */; };
+		2FE6F3391CF8D30000BCB118 /* TickListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3381CF8D30000BCB118 /* TickListUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FE6F32A1CF8D30000BCB118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FE6F3091CF8D2FF00BCB118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FE6F3101CF8D2FF00BCB118;
+			remoteInfo = TickList;
+		};
+		2FE6F3351CF8D30000BCB118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FE6F3091CF8D2FF00BCB118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FE6F3101CF8D2FF00BCB118;
+			remoteInfo = TickList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTableViewCell.swift; sourceTree = "<group>"; };
+		2F1F16661CFBC0DB0097EEED /* TickList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TickList.xcdatamodel; sourceTree = "<group>"; };
+		2F1F166B1CFBC2720097EEED /* Tick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tick.swift; path = ../Tick.swift; sourceTree = "<group>"; };
+		2FE6F3111CF8D2FF00BCB118 /* TickList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicksTableViewController.swift; sourceTree = "<group>"; };
+		2FE6F31D1CF8D30000BCB118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FE6F31F1CF8D30000BCB118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FE6F3221CF8D30000BCB118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FE6F3241CF8D30000BCB118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE6F3291CF8D30000BCB118 /* TickListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE6F32D1CF8D30000BCB118 /* TickListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickListTests.swift; sourceTree = "<group>"; };
+		2FE6F32F1CF8D30000BCB118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE6F3341CF8D30000BCB118 /* TickListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE6F3381CF8D30000BCB118 /* TickListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickListUITests.swift; sourceTree = "<group>"; };
+		2FE6F33A1CF8D30000BCB118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FE6F30E1CF8D2FF00BCB118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE6F3261CF8D30000BCB118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE6F3311CF8D30000BCB118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FE6F3081CF8D2FF00BCB118 = {
+			isa = PBXGroup;
+			children = (
+				2FE6F3131CF8D2FF00BCB118 /* TickList */,
+				2FE6F32C1CF8D30000BCB118 /* TickListTests */,
+				2FE6F3371CF8D30000BCB118 /* TickListUITests */,
+				2FE6F3121CF8D2FF00BCB118 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FE6F3121CF8D2FF00BCB118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FE6F3111CF8D2FF00BCB118 /* TickList.app */,
+				2FE6F3291CF8D30000BCB118 /* TickListTests.xctest */,
+				2FE6F3341CF8D30000BCB118 /* TickListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FE6F3131CF8D2FF00BCB118 /* TickList */ = {
+			isa = PBXGroup;
+			children = (
+				2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */,
+				2FE6F31F1CF8D30000BCB118 /* Assets.xcassets */,
+				2FE6F3241CF8D30000BCB118 /* Info.plist */,
+				2FE6F3211CF8D30000BCB118 /* LaunchScreen.storyboard */,
+				2FE6F31C1CF8D30000BCB118 /* Main.storyboard */,
+				2F1F166B1CFBC2720097EEED /* Tick.swift */,
+				2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */,
+				2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */,
+				2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */,
+			);
+			path = TickList;
+			sourceTree = "<group>";
+		};
+		2FE6F32C1CF8D30000BCB118 /* TickListTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE6F32D1CF8D30000BCB118 /* TickListTests.swift */,
+				2FE6F32F1CF8D30000BCB118 /* Info.plist */,
+			);
+			path = TickListTests;
+			sourceTree = "<group>";
+		};
+		2FE6F3371CF8D30000BCB118 /* TickListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE6F3381CF8D30000BCB118 /* TickListUITests.swift */,
+				2FE6F33A1CF8D30000BCB118 /* Info.plist */,
+			);
+			path = TickListUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FE6F3101CF8D2FF00BCB118 /* TickList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE6F33D1CF8D30000BCB118 /* Build configuration list for PBXNativeTarget "TickList" */;
+			buildPhases = (
+				2FE6F30D1CF8D2FF00BCB118 /* Sources */,
+				2FE6F30E1CF8D2FF00BCB118 /* Frameworks */,
+				2FE6F30F1CF8D2FF00BCB118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TickList;
+			productName = TickList;
+			productReference = 2FE6F3111CF8D2FF00BCB118 /* TickList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FE6F3281CF8D30000BCB118 /* TickListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE6F3401CF8D30000BCB118 /* Build configuration list for PBXNativeTarget "TickListTests" */;
+			buildPhases = (
+				2FE6F3251CF8D30000BCB118 /* Sources */,
+				2FE6F3261CF8D30000BCB118 /* Frameworks */,
+				2FE6F3271CF8D30000BCB118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FE6F32B1CF8D30000BCB118 /* PBXTargetDependency */,
+			);
+			name = TickListTests;
+			productName = TickListTests;
+			productReference = 2FE6F3291CF8D30000BCB118 /* TickListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FE6F3331CF8D30000BCB118 /* TickListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE6F3431CF8D30000BCB118 /* Build configuration list for PBXNativeTarget "TickListUITests" */;
+			buildPhases = (
+				2FE6F3301CF8D30000BCB118 /* Sources */,
+				2FE6F3311CF8D30000BCB118 /* Frameworks */,
+				2FE6F3321CF8D30000BCB118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FE6F3361CF8D30000BCB118 /* PBXTargetDependency */,
+			);
+			name = TickListUITests;
+			productName = TickListUITests;
+			productReference = 2FE6F3341CF8D30000BCB118 /* TickListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FE6F3091CF8D2FF00BCB118 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tyler.miamioh.com;
+				TargetAttributes = {
+					2FE6F3101CF8D2FF00BCB118 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2FE6F3281CF8D30000BCB118 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2FE6F3101CF8D2FF00BCB118;
+					};
+					2FE6F3331CF8D30000BCB118 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2FE6F3101CF8D2FF00BCB118;
+					};
+				};
+			};
+			buildConfigurationList = 2FE6F30C1CF8D2FF00BCB118 /* Build configuration list for PBXProject "TickList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FE6F3081CF8D2FF00BCB118;
+			productRefGroup = 2FE6F3121CF8D2FF00BCB118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FE6F3101CF8D2FF00BCB118 /* TickList */,
+				2FE6F3281CF8D30000BCB118 /* TickListTests */,
+				2FE6F3331CF8D30000BCB118 /* TickListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FE6F30F1CF8D2FF00BCB118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE6F3231CF8D30000BCB118 /* LaunchScreen.storyboard in Resources */,
+				2FE6F3201CF8D30000BCB118 /* Assets.xcassets in Resources */,
+				2FE6F31E1CF8D30000BCB118 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE6F3271CF8D30000BCB118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE6F3321CF8D30000BCB118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FE6F30D1CF8D2FF00BCB118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1F16671CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
+				2F1F165D1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
+				2FE6F3191CF8D2FF00BCB118 /* TicksTableViewController.swift in Sources */,
+				2F1F166F1CFBC2720097EEED /* Tick.swift in Sources */,
+				2FE6F3151CF8D2FF00BCB118 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE6F3251CF8D30000BCB118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1F16701CFBC2720097EEED /* Tick.swift in Sources */,
+				2F1F16681CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
+				2F1F165E1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
+				2FE6F32E1CF8D30000BCB118 /* TickListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE6F3301CF8D30000BCB118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1F16711CFBC2720097EEED /* Tick.swift in Sources */,
+				2F1F16691CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
+				2F1F165F1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
+				2FE6F3391CF8D30000BCB118 /* TickListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FE6F32B1CF8D30000BCB118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FE6F3101CF8D2FF00BCB118 /* TickList */;
+			targetProxy = 2FE6F32A1CF8D30000BCB118 /* PBXContainerItemProxy */;
+		};
+		2FE6F3361CF8D30000BCB118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FE6F3101CF8D2FF00BCB118 /* TickList */;
+			targetProxy = 2FE6F3351CF8D30000BCB118 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FE6F31C1CF8D30000BCB118 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FE6F31D1CF8D30000BCB118 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FE6F3211CF8D30000BCB118 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FE6F3221CF8D30000BCB118 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FE6F33B1CF8D30000BCB118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FE6F33C1CF8D30000BCB118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FE6F33E1CF8D30000BCB118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TickList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tyler.miamioh.com.TickList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FE6F33F1CF8D30000BCB118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TickList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tyler.miamioh.com.TickList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2FE6F3411CF8D30000BCB118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TickListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tyler.miamioh.com.TickListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickList.app/TickList";
+			};
+			name = Debug;
+		};
+		2FE6F3421CF8D30000BCB118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TickListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tyler.miamioh.com.TickListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickList.app/TickList";
+			};
+			name = Release;
+		};
+		2FE6F3441CF8D30000BCB118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TickListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tyler.miamioh.com.TickListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TickList;
+			};
+			name = Debug;
+		};
+		2FE6F3451CF8D30000BCB118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TickListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tyler.miamioh.com.TickListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TickList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FE6F30C1CF8D2FF00BCB118 /* Build configuration list for PBXProject "TickList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE6F33B1CF8D30000BCB118 /* Debug */,
+				2FE6F33C1CF8D30000BCB118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE6F33D1CF8D30000BCB118 /* Build configuration list for PBXNativeTarget "TickList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE6F33E1CF8D30000BCB118 /* Debug */,
+				2FE6F33F1CF8D30000BCB118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE6F3401CF8D30000BCB118 /* Build configuration list for PBXNativeTarget "TickListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE6F3411CF8D30000BCB118 /* Debug */,
+				2FE6F3421CF8D30000BCB118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE6F3431CF8D30000BCB118 /* Build configuration list for PBXNativeTarget "TickListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE6F3441CF8D30000BCB118 /* Debug */,
+				2FE6F3451CF8D30000BCB118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F1F16661CFBC0DB0097EEED /* TickList.xcdatamodel */,
+			);
+			currentVersion = 2F1F16661CFBC0DB0097EEED /* TickList.xcdatamodel */;
+			path = TickList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2FE6F3091CF8D2FF00BCB118 /* Project object */;
+}

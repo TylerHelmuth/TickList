@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Tick" representedClassName=".Tick" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="send" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortingGrade" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="wall" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Tick" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>
