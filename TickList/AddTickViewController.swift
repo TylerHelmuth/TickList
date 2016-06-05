@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddTickViewController: UIViewController {
+class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var gradePickerView: UIPickerView!
@@ -28,7 +28,10 @@ class AddTickViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gradePickerView.delegate = self
         gradePickerView.dataSource = self
+        sendPickerView.delegate = self
+        sendPickerView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +39,28 @@ class AddTickViewController: UIViewController {
     }
 
     @IBAction func cancel(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     @IBAction func save(sender: UIBarButtonItem) {
+    }
+    
+    // MARK: - Picker delegate and data sources
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView == gradePickerView {
+            return grades.count
+        }
+        return sends.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView == gradePickerView {
+            return grades[row]
+        }
+        return sends[row]
     }
 }
