@@ -13,15 +13,15 @@ class TicksTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadTicks()
+        ticks = loadTicks()
     }
     
-    func loadTicks() {
+    func loadTicks() -> [Tick] {
         let managedContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let fetchRequest = NSFetchRequest(entityName: "Tick")
         
         do {
-            ticks = try managedContext.executeFetchRequest(fetchRequest) as! [Tick]
+            return try managedContext.executeFetchRequest(fetchRequest) as! [Tick]
         } catch {
             fatalError("Failed to fetch person: \(error)")
         }
@@ -60,6 +60,13 @@ class TicksTableViewController: UITableViewController {
         } catch {
             fatalError("Failure to save context: \(error)")
         }
+    }
+    
+    @IBAction func recordSaved(segue:UIStoryboardSegue) {
+        let controller = segue.sourceViewController as! AddTickViewController
+        controller.saveTick()
+        ticks = loadTicks()
+        tableView.reloadData()
     }
 }
 

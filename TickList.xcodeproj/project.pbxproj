@@ -16,9 +16,13 @@
 		2F1F166F1CFBC2720097EEED /* Tick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F166B1CFBC2720097EEED /* Tick.swift */; };
 		2F1F16701CFBC2720097EEED /* Tick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F166B1CFBC2720097EEED /* Tick.swift */; };
 		2F1F16711CFBC2720097EEED /* Tick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F166B1CFBC2720097EEED /* Tick.swift */; };
-		2F34A5F51D0328FD005AAD3D /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F34A5F41D0328FD005AAD3D /* AddTickViewController.swift */; };
-		2F34A5F61D0328FD005AAD3D /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F34A5F41D0328FD005AAD3D /* AddTickViewController.swift */; };
-		2F34A5F71D0328FD005AAD3D /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F34A5F41D0328FD005AAD3D /* AddTickViewController.swift */; };
+		2F29A10A1D03E35600E3C0C1 /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */; };
+		2F29A10D1D03E38600E3C0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */; };
+		2F29A10E1D03E38700E3C0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */; };
+		2F29A10F1D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */; };
+		2F29A1101D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */; };
+		2F29A1111D03E39400E3C0C1 /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */; };
+		2F29A1121D03E39500E3C0C1 /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */; };
 		2FE6F3151CF8D2FF00BCB118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */; };
 		2FE6F3191CF8D2FF00BCB118 /* TicksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */; };
 		2FE6F31E1CF8D30000BCB118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6F31C1CF8D30000BCB118 /* Main.storyboard */; };
@@ -49,7 +53,7 @@
 		2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTableViewCell.swift; sourceTree = "<group>"; };
 		2F1F16661CFBC0DB0097EEED /* TickList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TickList.xcdatamodel; sourceTree = "<group>"; };
 		2F1F166B1CFBC2720097EEED /* Tick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tick.swift; path = ../Tick.swift; sourceTree = "<group>"; };
-		2F34A5F41D0328FD005AAD3D /* AddTickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTickViewController.swift; sourceTree = "<group>"; };
+		2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTickViewController.swift; path = ../AddTickViewController.swift; sourceTree = "<group>"; };
 		2FE6F3111CF8D2FF00BCB118 /* TickList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicksTableViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +126,7 @@
 				2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */,
 				2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */,
 				2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */,
-				2F34A5F41D0328FD005AAD3D /* AddTickViewController.swift */,
+				2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */,
 			);
 			path = TickList;
 			sourceTree = "<group>";
@@ -281,7 +285,7 @@
 				2FE6F3191CF8D2FF00BCB118 /* TicksTableViewController.swift in Sources */,
 				2F1F166F1CFBC2720097EEED /* Tick.swift in Sources */,
 				2FE6F3151CF8D2FF00BCB118 /* AppDelegate.swift in Sources */,
-				2F34A5F51D0328FD005AAD3D /* AddTickViewController.swift in Sources */,
+				2F29A10A1D03E35600E3C0C1 /* AddTickViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +295,10 @@
 			files = (
 				2F1F16701CFBC2720097EEED /* Tick.swift in Sources */,
 				2F1F16681CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
+				2F29A1111D03E39400E3C0C1 /* AddTickViewController.swift in Sources */,
+				2F29A10F1D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */,
 				2F1F165E1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
-				2F34A5F61D0328FD005AAD3D /* AddTickViewController.swift in Sources */,
+				2F29A10D1D03E38600E3C0C1 /* AppDelegate.swift in Sources */,
 				2FE6F32E1CF8D30000BCB118 /* TickListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +309,10 @@
 			files = (
 				2F1F16711CFBC2720097EEED /* Tick.swift in Sources */,
 				2F1F16691CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
+				2F29A1121D03E39500E3C0C1 /* AddTickViewController.swift in Sources */,
+				2F29A1101D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */,
 				2F1F165F1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
-				2F34A5F71D0328FD005AAD3D /* AddTickViewController.swift in Sources */,
+				2F29A10E1D03E38700E3C0C1 /* AppDelegate.swift in Sources */,
 				2FE6F3391CF8D30000BCB118 /* TickListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

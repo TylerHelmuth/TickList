@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var imageView: UIImageView!
@@ -33,16 +34,40 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         sendPickerView.delegate = self
         sendPickerView.dataSource = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
     @IBAction func cancel(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func save(sender: UIBarButtonItem) {
+    func saveTick() {
+        let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let entity =  NSEntityDescription.entityForName("Tick", inManagedObjectContext: managedObjectContext)
+        
+        let tick = NSManagedObject(entity: entity!, insertIntoManagedObjectContext:  managedObjectContext)
+        
+        tick.setValue(commentsTextField.text, forKey: "comment");
+        tick.setValue(datePickerView.date, forKey: "date");
+        tick.setValue(grades[gradePickerView.selectedRowInComponent(0)], forKey: "grade");
+        tick.setValue(locationTextField.text, forKey: "location")
+        tick.setValue(nameTextField.text, forKey: "name")
+        tick.setValue(sends[sendPickerView.selectedRowInComponent(0)], forKey: "send")
+        tick.setValue(gradePickerView.selectedRowInComponent(0), forKey: "sortingGrade")
+        tick.setValue(wallTextField.text, forKey: "wall")
+        
+        if let image = imageView.image {
+            tick.setValue(UIImageJPEGRepresentation(image, 1), forKey: "photo")
+        }
+        
+        do {
+            try managedObjectContext.save()
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+
     }
     
     // MARK: - Picker delegate and data sources
