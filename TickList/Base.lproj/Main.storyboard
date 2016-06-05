@@ -94,22 +94,22 @@
         <!--Add Tick-->
         <scene sceneID="9pZ-Iz-fXC">
             <objects>
-                <viewController id="agv-CX-WOy" sceneMemberID="viewController">
+                <viewController id="agv-CX-WOy" customClass="AddTickViewController" customModule="TickList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5zI-n2-fPd"/>
                         <viewControllerLayoutGuide type="bottom" id="P1Z-dD-BGu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lGj-R9-jmX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smF-xe-5GS">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-Si-LVx">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="583"/>
+                                        <rect key="frame" x="0.0" y="8" width="600" height="583"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JGI-j6-g05">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="JGI-j6-g05">
                                                 <rect key="frame" x="200" y="0.0" width="201" height="212"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="212" id="JDS-Cy-voU"/>
@@ -279,8 +279,8 @@
                                 <constraints>
                                     <constraint firstItem="kgU-Si-LVx" firstAttribute="width" secondItem="smF-xe-5GS" secondAttribute="width" id="fgw-Jj-sqJ"/>
                                     <constraint firstItem="kgU-Si-LVx" firstAttribute="leading" secondItem="smF-xe-5GS" secondAttribute="leading" id="fn5-fW-vHp"/>
-                                    <constraint firstItem="kgU-Si-LVx" firstAttribute="top" secondItem="smF-xe-5GS" secondAttribute="top" id="lWY-cy-bNb"/>
-                                    <constraint firstAttribute="bottom" secondItem="kgU-Si-LVx" secondAttribute="bottom" id="lWa-8H-8bd"/>
+                                    <constraint firstItem="kgU-Si-LVx" firstAttribute="top" secondItem="smF-xe-5GS" secondAttribute="top" constant="8" id="lWY-cy-bNb"/>
+                                    <constraint firstAttribute="bottom" secondItem="kgU-Si-LVx" secondAttribute="bottom" constant="8" id="lWa-8H-8bd"/>
                                     <constraint firstAttribute="trailing" secondItem="kgU-Si-LVx" secondAttribute="trailing" id="ybD-Q5-aPV"/>
                                 </constraints>
                             </scrollView>
@@ -293,10 +293,30 @@
                             <constraint firstItem="smF-xe-5GS" firstAttribute="leading" secondItem="lGj-R9-jmX" secondAttribute="leadingMargin" constant="-20" id="eu0-nb-7Id"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Add Tick" id="jUt-0e-2fW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fdO-ho-PxM"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6hA-8r-7jo"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fdO-ho-PxM">
+                            <connections>
+                                <action selector="cancel:" destination="agv-CX-WOy" id="tHH-QY-rVz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6hA-8r-7jo">
+                            <connections>
+                                <action selector="save:" destination="agv-CX-WOy" id="viI-0U-WiQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="commentsTextField" destination="SZD-R8-kch" id="lbm-bU-HeE"/>
+                        <outlet property="datePickerView" destination="QOe-iU-QwY" id="5cn-MF-hX8"/>
+                        <outlet property="gradePickerView" destination="Leb-I0-dqV" id="VVM-Xk-epH"/>
+                        <outlet property="imageView" destination="JGI-j6-g05" id="OCB-L6-p6G"/>
+                        <outlet property="locationTextField" destination="dJX-2b-cXA" id="sdk-8k-dUO"/>
+                        <outlet property="nameTextField" destination="m4O-wQ-01r" id="vzO-2y-jSm"/>
+                        <outlet property="scrollView" destination="smF-xe-5GS" id="m18-VU-uun"/>
+                        <outlet property="sendPickerView" destination="Yij-TV-53A" id="zKv-O0-b1x"/>
+                        <outlet property="wallTextField" destination="n68-YN-9gF" id="4xH-h4-Edf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MR8-kd-Cxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -359,4 +379,7 @@
             <point key="canvasLocation" x="2493" y="-778"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultImage" width="540" height="540"/>
+    </resources>
 </document>
