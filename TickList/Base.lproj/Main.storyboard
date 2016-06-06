@@ -107,17 +107,38 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-Si-LVx">
-                                        <rect key="frame" x="0.0" y="8" width="600" height="673"/>
+                                        <rect key="frame" x="0.0" y="8" width="600" height="731"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="JGI-j6-g05">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="JGI-j6-g05">
                                                 <rect key="frame" x="200" y="0.0" width="201" height="212"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="212" id="JDS-Cy-voU"/>
                                                     <constraint firstAttribute="width" constant="201" id="gcd-KJ-0aq"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="0lh-IC-v8a" appends="YES" id="exX-Ox-iXQ"/>
+                                                </connections>
                                             </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2b-uZ-yLj" customClass="RatingControl" customModule="TickList" customModuleProvider="target">
+                                                <rect key="frame" x="300" y="220" width="0.0" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="9eC-nI-qpa"/>
+                                                    <constraint firstAttribute="width" constant="240" id="9zs-ZA-fn4"/>
+                                                    <constraint firstAttribute="height" constant="50" id="q4O-0a-MeA"/>
+                                                    <constraint firstAttribute="height" constant="50" id="yfP-DB-mqB"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="9eC-nI-qpa"/>
+                                                        <exclude reference="9zs-ZA-fn4"/>
+                                                        <exclude reference="yfP-DB-mqB"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Go-UL-I2l">
-                                                <rect key="frame" x="20" y="220" width="560" height="453"/>
+                                                <rect key="frame" x="20" y="278" width="560" height="453"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LpO-bx-Sw2">
                                                         <rect key="frame" x="0.0" y="0.0" width="560" height="45"/>
@@ -269,11 +290,27 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="W2b-uZ-yLj" firstAttribute="centerX" secondItem="kgU-Si-LVx" secondAttribute="centerX" id="8JD-mW-OUb"/>
                                             <constraint firstItem="2Go-UL-I2l" firstAttribute="leading" secondItem="kgU-Si-LVx" secondAttribute="leading" constant="20" id="Iol-pR-QU1"/>
+                                            <constraint firstItem="W2b-uZ-yLj" firstAttribute="leading" secondItem="kgU-Si-LVx" secondAttribute="leading" id="Kdn-rV-qae"/>
                                             <constraint firstAttribute="trailing" secondItem="2Go-UL-I2l" secondAttribute="trailing" constant="20" id="SLe-Nw-2A6"/>
+                                            <constraint firstAttribute="trailing" secondItem="W2b-uZ-yLj" secondAttribute="trailing" constant="180" id="WfS-qi-3uO"/>
+                                            <constraint firstItem="2Go-UL-I2l" firstAttribute="top" secondItem="W2b-uZ-yLj" secondAttribute="bottom" constant="8" id="XLN-jJ-Hit"/>
+                                            <constraint firstItem="W2b-uZ-yLj" firstAttribute="top" secondItem="JGI-j6-g05" secondAttribute="bottom" constant="8" id="Xcq-KX-MaE"/>
+                                            <constraint firstItem="2Go-UL-I2l" firstAttribute="top" secondItem="W2b-uZ-yLj" secondAttribute="bottom" constant="8" id="bPI-ci-523"/>
                                             <constraint firstItem="2Go-UL-I2l" firstAttribute="top" secondItem="JGI-j6-g05" secondAttribute="bottom" constant="8" id="df2-Ge-TO7"/>
+                                            <constraint firstItem="W2b-uZ-yLj" firstAttribute="top" secondItem="JGI-j6-g05" secondAttribute="bottom" constant="8" id="gfN-X9-HOZ"/>
                                             <constraint firstAttribute="bottom" secondItem="2Go-UL-I2l" secondAttribute="bottom" id="qur-jw-qTR"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XLN-jJ-Hit"/>
+                                                <exclude reference="df2-Ge-TO7"/>
+                                                <exclude reference="Kdn-rV-qae"/>
+                                                <exclude reference="WfS-qi-3uO"/>
+                                                <exclude reference="gfN-X9-HOZ"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -313,6 +350,7 @@
                         <outlet property="imageView" destination="JGI-j6-g05" id="OCB-L6-p6G"/>
                         <outlet property="locationTextField" destination="dJX-2b-cXA" id="sdk-8k-dUO"/>
                         <outlet property="nameTextField" destination="m4O-wQ-01r" id="vzO-2y-jSm"/>
+                        <outlet property="ratingControl" destination="W2b-uZ-yLj" id="lgH-I4-hsl"/>
                         <outlet property="scrollView" destination="smF-xe-5GS" id="m18-VU-uun"/>
                         <outlet property="sendPickerView" destination="Yij-TV-53A" id="zKv-O0-b1x"/>
                         <outlet property="wallTextField" destination="n68-YN-9gF" id="4xH-h4-Edf"/>
@@ -320,6 +358,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MR8-kd-Cxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gGN-no-SIA" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="0lh-IC-v8a">
+                    <connections>
+                        <action selector="selectImage:" destination="agv-CX-WOy" id="wB7-OF-COH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3305" y="-778"/>
         </scene>

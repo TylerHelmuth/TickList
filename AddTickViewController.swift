@@ -9,8 +9,9 @@
 import UIKit
 import CoreData
 
-class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var gradePickerView: UIPickerView!
     @IBOutlet weak var datePickerView: UIDatePicker!
@@ -19,6 +20,8 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var sendPickerView: UIPickerView!
     @IBOutlet weak var commentsTextField: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    var activeTextField: UITextField?
     
     let grades = ["5.4","5.5","5.6","5.7-", "5.7", "5.7+","5.8-", "5.8","5.8+", "5.9-", "5.9", "5.9+", "5.10-", "5.10a",
                   "5.10b", "5.10c", "5.10d", "5.10+", "5.11-", "5.11a", "5.11b", "5.11c", "5.11d", "5.11+", "5.12-",
@@ -54,6 +57,7 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         tick.setValue(grades[gradePickerView.selectedRowInComponent(0)], forKey: "grade");
         tick.setValue(locationTextField.text, forKey: "location")
         tick.setValue(nameTextField.text, forKey: "name")
+        tick.setValue(ratingControl.rating, forKey: "rating");
         tick.setValue(sends[sendPickerView.selectedRowInComponent(0)], forKey: "send")
         tick.setValue(gradePickerView.selectedRowInComponent(0), forKey: "sortingGrade")
         tick.setValue(wallTextField.text, forKey: "wall")
@@ -67,6 +71,50 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
+
+    }
+    
+    // MARK: UIImagePickerControllerDelegate
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageView.image = selectedImage
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func selectImage(sender: UITapGestureRecognizer) {
+        if let _ = activeTextField {
+            activeTextField!.resignFirstResponder()
+        }
+        
+        let alertController = UIAlertController(title: "Select or take photo.", message: "", preferredStyle: .ActionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            print("cancelled")
+        }
+        alertController.addAction(cancelAction)
+        
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .Default) { (action) in
+            self.presentImagePickerController(.PhotoLibrary)
+        }
+        alertController.addAction(photoLibraryAction)
+        
+        let takePhotoAction = UIAlertAction(title: "Take Photo", style: .Default) { (action) in
+            self.presentImagePickerController(.Camera)
+        }
+        alertController.addAction(takePhotoAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func presentImagePickerController(sourceType: UIImagePickerControllerSourceType) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = sourceType
+        imagePickerController.delegate = self
+        self.presentViewController(imagePickerController, animated: true, completion: nil)
 
     }
     
