@@ -121,6 +121,7 @@
 		2FE6F3131CF8D2FF00BCB118 /* TickList */ = {
 			isa = PBXGroup;
 			children = (
+				2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */,
 				2F9CAEC61D04A4BD00B23B62 /* Tick.swift */,
 				2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */,
 				2FE6F31F1CF8D30000BCB118 /* Assets.xcassets */,
@@ -130,7 +131,6 @@
 				2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */,
 				2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */,
 				2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */,
-				2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */,
 				2F9CAEC11D049FC900B23B62 /* RatingControl.swift */,
 			);
 			path = TickList;
