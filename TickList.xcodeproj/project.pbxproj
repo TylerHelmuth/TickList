@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F01195F1D05108A009792CC /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01195E1D05108A009792CC /* AddTickViewController.swift */; };
+		2F0119601D05109B009792CC /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01195E1D05108A009792CC /* AddTickViewController.swift */; };
+		2F0119611D05109C009792CC /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01195E1D05108A009792CC /* AddTickViewController.swift */; };
 		2F1F165D1CFBBD760097EEED /* TickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */; };
 		2F1F165E1CFBBD760097EEED /* TickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */; };
 		2F1F165F1CFBBD760097EEED /* TickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */; };
 		2F1F16671CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */; };
 		2F1F16681CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */; };
 		2F1F16691CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16651CFBC0DB0097EEED /* TickList.xcdatamodeld */; };
-		2F29A10A1D03E35600E3C0C1 /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */; };
 		2F29A10D1D03E38600E3C0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */; };
 		2F29A10E1D03E38700E3C0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */; };
 		2F29A10F1D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */; };
 		2F29A1101D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6F3181CF8D2FF00BCB118 /* TicksTableViewController.swift */; };
-		2F29A1111D03E39400E3C0C1 /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */; };
-		2F29A1121D03E39500E3C0C1 /* AddTickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */; };
 		2F9CAEC21D049FC900B23B62 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9CAEC11D049FC900B23B62 /* RatingControl.swift */; };
 		2F9CAEC31D049FC900B23B62 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9CAEC11D049FC900B23B62 /* RatingControl.swift */; };
 		2F9CAEC41D049FC900B23B62 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9CAEC11D049FC900B23B62 /* RatingControl.swift */; };
@@ -53,9 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F01195E1D05108A009792CC /* AddTickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTickViewController.swift; sourceTree = "<group>"; };
 		2F1F165C1CFBBD760097EEED /* TickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTableViewCell.swift; sourceTree = "<group>"; };
 		2F1F16661CFBC0DB0097EEED /* TickList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TickList.xcdatamodel; sourceTree = "<group>"; };
-		2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTickViewController.swift; path = ../AddTickViewController.swift; sourceTree = "<group>"; };
 		2F9CAEC11D049FC900B23B62 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		2F9CAEC61D04A4BD00B23B62 /* Tick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tick.swift; sourceTree = "<group>"; };
 		2FE6F3111CF8D2FF00BCB118 /* TickList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +121,7 @@
 		2FE6F3131CF8D2FF00BCB118 /* TickList */ = {
 			isa = PBXGroup;
 			children = (
-				2F29A1091D03E35600E3C0C1 /* AddTickViewController.swift */,
+				2F01195E1D05108A009792CC /* AddTickViewController.swift */,
 				2F9CAEC61D04A4BD00B23B62 /* Tick.swift */,
 				2FE6F3141CF8D2FF00BCB118 /* AppDelegate.swift */,
 				2FE6F31F1CF8D30000BCB118 /* Assets.xcassets */,
@@ -287,11 +287,11 @@
 			files = (
 				2F9CAECA1D04A4BD00B23B62 /* Tick.swift in Sources */,
 				2F9CAEC21D049FC900B23B62 /* RatingControl.swift in Sources */,
+				2F01195F1D05108A009792CC /* AddTickViewController.swift in Sources */,
 				2F1F16671CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
 				2F1F165D1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
 				2FE6F3191CF8D2FF00BCB118 /* TicksTableViewController.swift in Sources */,
 				2FE6F3151CF8D2FF00BCB118 /* AppDelegate.swift in Sources */,
-				2F29A10A1D03E35600E3C0C1 /* AddTickViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1F16681CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
-				2F29A1111D03E39400E3C0C1 /* AddTickViewController.swift in Sources */,
+				2F0119601D05109B009792CC /* AddTickViewController.swift in Sources */,
 				2F29A10F1D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */,
 				2F9CAEC31D049FC900B23B62 /* RatingControl.swift in Sources */,
 				2F1F165E1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
@@ -315,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1F16691CFBC0DB0097EEED /* TickList.xcdatamodeld in Sources */,
-				2F29A1121D03E39500E3C0C1 /* AddTickViewController.swift in Sources */,
+				2F0119611D05109C009792CC /* AddTickViewController.swift in Sources */,
 				2F29A1101D03E39100E3C0C1 /* TicksTableViewController.swift in Sources */,
 				2F9CAEC41D049FC900B23B62 /* RatingControl.swift in Sources */,
 				2F1F165F1CFBBD760097EEED /* TickTableViewCell.swift in Sources */,
