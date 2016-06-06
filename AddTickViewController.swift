@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITextFieldDelegate {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var nameTextField: UITextField!
@@ -29,6 +29,12 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
                   "5.14-", "5.14a", "5.14b", "5.14c", "5.14d", "5.14+", "5.15-", "5.15a", "5.15b", "5.15c"]
     let sends = ["Redpoint", "Flash", "Onsight"]
     
+    deinit {
+        //Removing notifies on keyboard appearing
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +42,18 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         gradePickerView.dataSource = self
         sendPickerView.delegate = self
         sendPickerView.dataSource = self
+        
+        nameTextField.delegate = self
+        locationTextField.delegate = self
+        wallTextField.delegate = self
+        commentsTextField.delegate = self
+        
+        //Adding notifies on keyboard appearing
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddTickViewController.keyboardWasShown(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddTickViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        
+        let hideKeyboardTapGesture = UITapGestureRecognizer(target: self, action: #selector(AddTickViewController.hideKeyboard))
+        view.addGestureRecognizer(hideKeyboardTapGesture)
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,7 +92,7 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
     }
     
-    // MARK: UIImagePickerControllerDelegate
+    // MARK: Image Selection
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -93,7 +111,6 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let alertController = UIAlertController(title: "Select or take photo.", message: "", preferredStyle: .ActionSheet)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-            print("cancelled")
         }
         alertController.addAction(cancelAction)
         
@@ -135,5 +152,52 @@ class AddTickViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             return grades[row]
         }
         return sends[row]
+    }
+    
+    // MARK: - Keyboard methods
+    func keyboardWasShown(notification: NSNotification) {
+        let info : NSDictionary = notification.userInfo!
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue().size
+        let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize!.height, 0.0)
+        
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+        
+        var aRect : CGRect = self.view.frame
+        aRect.size.height -= keyboardSize!.height
+        
+        if let _ = activeTextField {
+            let activeTextFieldFrame = activeTextField!.frame
+            if (CGRectContainsRect(aRect, activeTextFieldFrame)) {
+                self.scrollView.scrollRectToVisible(activeTextField!.frame, animated: true)
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification:NSNotification){
+        let contentInsets = UIEdgeInsetsZero;
+        scrollView.contentInset = contentInsets;
+        scrollView.scrollIndicatorInsets = contentInsets;
+    }
+    
+    func hideKeyboard() {
+        if let _ = activeTextField {
+            activeTextField!.resignFirstResponder()
+        }
+    }
+    
+    
+    // MARK :- TextField Delegate Methods
+    func textFieldDidBeginEditing(textField: UITextField) {
+        activeTextField = textField
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        activeTextField = nil
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
